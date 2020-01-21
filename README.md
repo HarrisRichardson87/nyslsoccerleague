@@ -1,4 +1,5 @@
 # nyslsoccerleague
 Ubiqum Project One
 
-First project with Bootstrap.
+Sample Soccer League website.
+
