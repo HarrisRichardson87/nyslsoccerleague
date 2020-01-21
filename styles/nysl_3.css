@@ -1,0 +1,79 @@
+nav{
+    font-family: 'Lobster', cursive;
+}
+#tableunder{
+    text-align: center;
+}
+table{
+    text-align: center;
+    border-collapse: collapse;
+}
+th{
+    background-color: orange;
+    font-family: 'Lobster', cursive;
+
+}
+#logo{
+    height:100px;
+    width:100px;
+
+}
+a{
+   color:grey;
+}
+
+h3{
+    font-family: 'Lobster', cursive;
+    
+
+}
+.jumbotron{
+    align-items: center;
+}
+h1{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}
+
+#football{
+    text-align:center;
+}
+#content_index{
+    padding-top: 2%;
+    padding-bottom:2%;
+
+}
+footer{
+    font-family: 'Lobster', cursive ;
+    color:white;
+    background-color: gray;
+}
+footer a{
+    color:white;
+}
+.firstpic{
+    border-radius: 50%;
+}
+
+.nav-link :hover{
+    color:white;
+}
+.nav-link :visited{
+    color:white;
+}
+form{
+    padding:10%;
+}
+
+#select{
+    padding-bottom: 5%;
+}
+iframe{
+    position: 'absolute'; 
+    left:0;
+    top:0;
+}
+button{
+    background-color: orange;
+    color: orange;
+}
