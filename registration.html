@@ -52,7 +52,7 @@
     <!-- SIGN UP FORM -->
 <form class="text-center border border-light p-5" action="show_data.html" method="GET">
 
-  <p class="h4 mb-4">Sign up</p>
+  <h1 class="h4 mb-4">Register</h1>
 
   <div class="form-row mb-4">
       <div class="col">
@@ -96,36 +96,108 @@
   <!-- Phone number -->
   <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
   <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
-    Optional 
+  
   </small>
   
-  <!-- Newsletter -->
-  <div class="checkbox-inline">
-    <input name="newsletter" type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
-    <label class="custom-control-label" for="defaultRegisterFormNewsletter">Subscribe to our newsletter</label>
-  </div>
-  
-  <!--School-->
-  <div id="select">
-    <select  class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="school" class="form-control mb-4">
-      <option selected>School</option>
-      <option value="1">Greenbay</option>
-      <option value="2">North</option>
-    </select>
-  </div>
-  <div class="radio">
-    <input type="radio" name="gender" value="male"> Male<br>
-    <input type="radio" name="gender" value="female"> Female<br>
+  <!-- Position -->
+
+  <h5>What position(s) do you normally play? (check all that apply)</h5>
+  <div class="form-row mb-2" id="position">
+    <div class="checkbox-inline">
+        <label class="checkbox"><input type="checkbox" value="">Forward</label>
+    </div>
+    <div class="checkbox">
+        <label class="checkbox"><input type="checkbox" value="">Midfield</label>
+    </div>
+    <div class="checkbox">
+        <label><input type="checkbox" value="">Defense</label>
+    </div>
+    <div class="checkbox">
+        <label><input type="checkbox" value="">Goalkeeper</label>
+    </div>
   </div>
 
+  <h5>What position(s) do you want to play? (check all that apply)</h5>
+  <div class="form-row mb-2" id="position">
+    <div class="checkbox">
+        <label class="checkbox"><input type="checkbox" value="">Forward</label>
+    </div>
+    <div class="checkbox">
+        <label class="checkbox"><input type="checkbox" value="">Midfield</label>
+    </div>
+    <div class="checkbox">
+        <label><input type="checkbox" value="">Defense</label>
+    </div>
+    <div class="checkbox">
+        <label><input type="checkbox" value="">Goalkeeper</label>
+    </div>
+  </div>
+ 
+
+  <!--Clothing-->
+  <div id="select">
+    <select  class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="jersey_size" class="form-control mb-4">
+      
+      <option selected>Jersey Size</option>
+      <option value="have_jersey">Have Jersey</option>
+      <option value="youth_small">Youth Small</option>
+      <option value="youth_medium">Youth Medium</option>
+      <option value="youth_large">Youth Large</option>
+      <option value="small">Small</option>
+      <option value="medium">Medium</option>
+      <option value="large">Large</option>
+      <option value="x_large">Xtra Large</option>
+      
+    </select>
+  </div>
+  <div id="select">
+    <select  class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="shorts_size" class="form-control mb-4">
+      
+      <option selected>Shorts Size</option>
+      <option value="have_shorts">Have Shorts</option>
+      <option value="youth_small">Youth Small</option>
+      <option value="youth_medium">Youth Medium</option>
+      <option value="youth_large">Youth Large</option>
+      <option value="small">Small</option>
+      <option value="medium">Medium</option>
+      <option value="large">Large</option>
+      <option value="x_large">Xtra Large</option>
+      
+    </select>
+  </div>
+  
+
+
   <!-- Sign up button -->
-  <button class="btn btn-info my-4 btn-block" type="submit">Sign in</button>
+  <button class="btn btn-info my-4 btn-block" type="submit">Register</button>
 
 </form>
 <!-- Default form register -->
     
     
+<!-- Which elementary schools do you live near?
+First Closest School: Second Closest School:
+AJ Katzenmaier Marjorie P Hart AJ Katzenmaier Marjorie P Hart
+Greenbay North Elementary Greenbay North Elementary
+Howard A Yeager South Elementary Howard A Yeager South Elementary
+What position(s) do you normally play? (check all that apply)
+Forward Midfield
+Defense Goalkeeper
+What position(s) do you want to play? (check all that apply)
+Forward Midfield
+Defense Goalkeeper
 
+
+Permission to Play
+I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth
+Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League”
+accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their
+employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or
+on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL
+sponsored activities, which transportation.
+By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the
+cancellation policy and agree to its terms.
+Parent/Guardian Signature: _____________________________________________________ Date: ___________________ -->
 
 
 

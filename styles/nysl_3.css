@@ -66,14 +66,36 @@ form{
 }
 
 #select{
-    padding-bottom: 5%;
+    padding-bottom: 2.5%;
 }
 iframe{
     position: 'absolute'; 
     left:0;
     top:0;
 }
-button{
-    background-color: orange;
-    color: orange;
+form button{
+    font-family: 'Lobster', cursive;
+
+}
+#position label{
+    padding:20px;
+    text-align: center;
+    align-items: center;
+}
+#position input{
+    padding:20px;
+    text-align: center;
+}
+#position{
+    text-align: center;
+    align-content: center;
+}
+.form-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+    justify-content: space-evenly;
 }
