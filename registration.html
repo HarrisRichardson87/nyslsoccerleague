@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/nysl_3.css">
+    <link rel="icon" href="./images/trophy.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -18,7 +19,7 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm">
+    <nav class="navbar fixed-top navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm">
         <div class="container">
             <a href="./index.html" class="navbar-brand">
                 <!-- Logo Image -->
@@ -48,244 +49,230 @@
     </nav>
 
     <!-- CONTENT -->
-    
+
     <!-- SIGN UP FORM -->
-<form class="text-center border border-light p-5" action="show_data.html" method="GET">
+    <form class="text-center border border-light p-5" id="content_index" action="show_data.html" method="GET">
 
-  <h3 class="h4 mb-4">Register</h3>
+        <h1 class="h4 mb-4">Register</h3>
 
-  <div class="form-row mb-4">
-      <div class="col">
-          <!-- First name -->
-          <input name="first_name"type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
-      </div>
-      <div class="col">
-          <!-- Last name -->
-          <input name="last_name" type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
-      </div>
-  </div>
-  <div class="form-row mb-4">
-    <div class="col">
-        <!-- Address -->
-        <input name="street_address"type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Address">
-    </div>
-    <div class="col">
-        <!-- City -->
-        <input name="city" type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="City">
-    </div>
-</div>
+            <div class="form-row mb-4">
+                <div class="col">
+                    <!-- First name -->
+                    <input name="first_name" type="text" id="defaultRegisterFormFirstName" class="form-control"
+                        placeholder="First name">
+                </div>
+                <div class="col">
+                    <!-- Last name -->
+                    <input name="last_name" type="text" id="defaultRegisterFormLastName" class="form-control"
+                        placeholder="Last name">
+                </div>
+            </div>
+            <div class="form-row mb-4">
+                <div class="col">
+                    <!-- Address -->
+                    <input name="street_address" type="text" id="defaultRegisterFormFirstName" class="form-control"
+                        placeholder="Address">
+                </div>
+                <div class="col">
+                    <!-- City -->
+                    <input name="city" type="text" id="defaultRegisterFormLastName" class="form-control"
+                        placeholder="City">
+                </div>
+            </div>
 
-<div class="form-row mb-4">
-  <div class="col">
-      <!-- Zip Code -->
-      <input name="zip_code"type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Zip Code">
-  </div>
-  <div class="col">
-      <!-- Birth Date -->
-      <input name="birth_date" type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Birth Date">
-  </div>
-</div>
+            <div class="form-row mb-4">
+                <div class="col">
+                    <!-- Zip Code -->
+                    <input name="zip_code" type="text" id="defaultRegisterFormFirstName" class="form-control"
+                        placeholder="Zip Code">
+                </div>
+                <div class="col">
+                    <!-- Birth Date -->
+                    <input name="birth_date" type="text" id="defaultRegisterFormLastName" class="form-control"
+                        placeholder="Birth Date">
+                </div>
+            </div>
 
-  <!-- E-mail -->
-  <input name="email" type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+            <!-- E-mail -->
+            <input name="email" type="email" id="defaultRegisterFormEmail" class="form-control mb-4"
+                placeholder="E-mail">
 
-  <!--Parent-->
-  <input name="parent_guardian" type="text" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="Parent or Guardian">
-
-  
-  <!-- Phone number -->
-  <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
-  <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
-  
-  </small>
-    <!--Radio-->
-
-    <div class="form-check">
-        <h3>Gender</h3>
-        <input class="form-check-input-inline" type="radio" name="gender"id="gender" value="male" checked>
-        <label class="form-check-label" for="gender">
-          Male
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input-inline" type="radio" name="gender"id="gender" value="femal">
-        <label class="form-check-label" for="gender">
-          Female
-        </label>
-      </div>
-      </div>
-  <!-- Position -->
-
-  <h3>What position(s) do you normally play? (check all that apply)</h3>
-  <div class="form-row mb-2" id="position">
-   <label>
-       Forward 
-       <input type="checkbox" name="forward_played" id="">
-    </label>
-    
-    <label for="midfielder_played">
-        Midfielder
-        <input type="checkbox" name="midfielder_played" id="">
-    </label>
-
-    <label for="defense_played">
-        Defense
-        <input type="checkbox" name="defense_played" id="">
-    </label>
-
-    <label for="goalie_played">
-        Goalie
-        <input type="checkbox" name="goalie_played" id="">
-    </label>
+            <!--Parent-->
+            <input name="parent_guardian" type="text" id="defaultRegisterFormEmail" class="form-control mb-4"
+                placeholder="Parent or Guardian">
 
 
-  </div>
+            <!-- Phone number -->
+            <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number"
+                aria-describedby="defaultRegisterFormPhoneHelpBlock">
+            <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
 
-  <h3>What position(s) do you want to play? (check all that apply)</h3>
-  <div class="form-row mb-2" id="position_wanted">
-    <label>
-        Forward 
-        <input type="checkbox" name="forward_wants" id="">
-     </label>
-     
-     <label for="midfielder_wants">
-         Midfielder
-         <input type="checkbox" name="midfielder_wants" id="">
-     </label>
- 
-     <label for="defense_wants">
-         Defense
-         <input type="checkbox" name="defense_wants" id="">
-     </label>
- 
-     <label for="goalie_wants">
-         Goalie
-         <input type="checkbox" name="goalie_wants" id="">
-     </label>
-  </div>
- 
+            </small>
+            <!--Radio-->
 
-  <!--Clothing-->
-  <div id="select">
-    <select  class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="jersey_size" class="form-control mb-4">
-      
-      <option selected>Jersey Size</option>
-      <option value="have_jersey">Have Jersey</option>
-      <option value="youth_small">Youth Small</option>
-      <option value="youth_medium">Youth Medium</option>
-      <option value="youth_large">Youth Large</option>
-      <option value="small">Small</option>
-      <option value="medium">Medium</option>
-      <option value="large">Large</option>
-      <option value="x_large">Xtra Large</option>
-      
-    </select>
-  </div>
-  <div id="select">
-    <select  class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="shorts_size" class="form-control mb-4">
-      
-      <option selected>Shorts Size</option>
-      <option value="have_shorts">Have Shorts</option>
-      <option value="youth_small">Youth Small</option>
-      <option value="youth_medium">Youth Medium</option>
-      <option value="youth_large">Youth Large</option>
-      <option value="small">Small</option>
-      <option value="medium">Medium</option>
-      <option value="large">Large</option>
-      <option value="x_large">Xtra Large</option>
-      
-    </select>
-  </div>
-  
-  <div id="terms">
-      <h1>Permission to Play</h1>
-      <img src="./images/terms.png" height="100" alt="">
-      <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth
-        Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League”
-        accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their
-        employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or
-        on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL
-        sponsored activities, which transportation.
-        By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the
-        cancellation policy and agree to its terms.</p>
-      <input type="checkbox" name="terms" id="">
-  </div>
+            <div class="form-check">
+                <h3>Gender</h3>
+                <input class="form-check-input-inline" type="radio" name="gender" id="gender" value="male" checked>
+                <label class="form-check-label" for="gender">
+                    Male
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input-inline" type="radio" name="gender" id="gender" value="femal">
+                <label class="form-check-label" for="gender">
+                    Female
+                </label>
+            </div>
+            </div>
+            <!-- Position -->
+
+            <h3>What position(s) do you normally play? (check all that apply)</h3>
+            <div class="form-row mb-2" id="position">
+                <label>
+                    Forward
+                    <input type="checkbox" name="forward_played" id="">
+                </label>
+
+                <label for="midfielder_played">
+                    Midfielder
+                    <input type="checkbox" name="midfielder_played" id="">
+                </label>
+
+                <label for="defense_played">
+                    Defense
+                    <input type="checkbox" name="defense_played" id="">
+                </label>
+
+                <label for="goalie_played">
+                    Goalie
+                    <input type="checkbox" name="goalie_played" id="">
+                </label>
 
 
-  <!-- Sign up button -->
-  <button class="btn btn-info my-4 btn-block" type="submit">Register</button>
+            </div>
 
-</form>
-<!-- Default form register -->
-    
-    
-<!-- Which elementary schools do you live near?
-First Closest School: Second Closest School:
-AJ Katzenmaier Marjorie P Hart AJ Katzenmaier Marjorie P Hart
-Greenbay North Elementary Greenbay North Elementary
-Howard A Yeager South Elementary Howard A Yeager South Elementary
-What position(s) do you normally play? (check all that apply)
-Forward Midfield
-Defense Goalkeeper
-What position(s) do you want to play? (check all that apply)
-Forward Midfield
-Defense Goalkeeper
+            <h3>What position(s) do you want to play? (check all that apply)</h3>
+            <div class="form-row mb-2" id="position_wanted">
+                <label>
+                    Forward
+                    <input type="checkbox" name="forward_wants" id="">
+                </label>
 
+                <label for="midfielder_wants">
+                    Midfielder
+                    <input type="checkbox" name="midfielder_wants" id="">
+                </label>
 
-Permission to Play
-I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth
-Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League”
-accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their
-employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or
-on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL
-sponsored activities, which transportation.
-By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the
-cancellation policy and agree to its terms.
-Parent/Guardian Signature: _____________________________________________________ Date: ___________________ -->
+                <label for="defense_wants">
+                    Defense
+                    <input type="checkbox" name="defense_wants" id="">
+                </label>
+
+                <label for="goalie_wants">
+                    Goalie
+                    <input type="checkbox" name="goalie_wants" id="">
+                </label>
+            </div>
 
 
+            <!--Clothing-->
+            <div id="select">
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="jersey_size"
+                    class="form-control mb-4">
+
+                    <option selected>Jersey Size</option>
+                    <option value="have_jersey">Have Jersey</option>
+                    <option value="youth_small">Youth Small</option>
+                    <option value="youth_medium">Youth Medium</option>
+                    <option value="youth_large">Youth Large</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="x_large">Xtra Large</option>
+
+                </select>
+            </div>
+            <div id="select">
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="shorts_size"
+                    class="form-control mb-4">
+
+                    <option selected>Shorts Size</option>
+                    <option value="have_shorts">Have Shorts</option>
+                    <option value="youth_small">Youth Small</option>
+                    <option value="youth_medium">Youth Medium</option>
+                    <option value="youth_large">Youth Large</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="x_large">Xtra Large</option>
+
+                </select>
+            </div>
+
+            <div id="terms">
+                <h1>Permission to Play</h1>
+                <img src="./images/terms.png" height="100" alt="">
+                <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all
+                    the rules of the Northside Youth
+                    Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and
+                    in consideration for the “League”
+                    accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or
+                    otherwise indemnify NYSL, their
+                    employees and associated personnel and volunteers, including the facilities used for practices and
+                    games, against any claim by or
+                    on behalf of the registrant as a result of the registrant’s participation in the program and/or
+                    being transported to or from NYSL
+                    sponsored activities, which transportation.
+                    By signing below, I hereby agree and authorize the above. In addition, by signing below, I also
+                    acknowledge that I have read the
+                    cancellation policy and agree to its terms.</p>
+                <input type="checkbox" name="terms" id="">
+            </div>
 
 
+            <!-- Sign up button -->
+            <button class="btn btn-info my-4 btn-block" type="submit">Register</button>
 
+    </form>
 
-
-
-
-<!-- Footer -->
+    <!-- Footer -->
     <footer class="page-footer font-small white shadow-sm">
         <div class="footer-copyright text-center py-3">
             <!--Linkedin -->
             <a class="li-ic">
-              <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> <img src="./images/linkedin.png" height="45"> </i>
+                <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> <img src="./images/linkedin.png"
+                        height="45"> </i>
             </a>
             <!--Facebook--->
             <a class="li-ic">
-                <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> <img src="./images/facebook.png" height="45"> </i>
+                <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> <img src="./images/facebook.png"
+                        height="45"> </i>
             </a>
             <!--Instagram-->
             <a class="li-ic">
-                <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> <img src="./images/instagram.png" height="45"> </i>
+                <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> <img src="./images/instagram.png"
+                        height="45"> </i>
             </a>
         </div>
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">
-          <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
-          <a href = "mailto: harris.richardson87@gmail.com">Website Designed by Harris Richardson <img src="./images/gmail (1).png" height="20"></a>
-          <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> icon from <a
-                    href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+            <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+            <a href="mailto: harris.richardson87@gmail.com">Website Designed by Harris Richardson <img
+                    src="./images/gmail (1).png" height="20"></a>
+
         </div>
     </footer>
 
-<!-- Bootstrap and jQuery -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <!-- Bootstrap and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 
 </body>
 
